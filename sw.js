@@ -1,7 +1,7 @@
-var cacheName = "febriansyah-pwa";
+var cacheName = "febriansyah";
 var filesToCache = [
   "/",
-  "/index.html"
+  "/index.html",
   // masukkan semua file yang dibuat offline disini
 ];
 self.addEventListener("install", function (e) {
