@@ -1,9 +1,6 @@
-var cacheName = "febriansyah";
-var filesToCache = [
-  "/",
-  "/index.html",
-  // masukkan semua file yang dibuat offline disini
-];
+var cacheName = "hello-world-page";
+var filesToCache = ["/", "/index.html"];
+
 self.addEventListener("install", function (e) {
   console.log("[ServiceWorker] Install");
   e.waitUntil(
@@ -13,9 +10,11 @@ self.addEventListener("install", function (e) {
     })
   );
 });
+
 self.addEventListener("activate", (event) => {
   event.waitUntil(self.clients.claim());
 });
+
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((response) => {
