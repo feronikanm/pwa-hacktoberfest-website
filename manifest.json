@@ -366,6 +366,6 @@
   "start_url": "https://febriansyah-speak.github.io/pwa-hacktoberfest-website/",
   "gcm_sender_id": "103953800507",
   "display": "standalone",
-  "background_color": "#FF9800",
-  "theme_color": "#FF9800"
+  "background_color": "#ff00ff",
+  "theme_color": "#ff00ff"
 }
